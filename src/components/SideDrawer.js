@@ -31,7 +31,7 @@ class SideDrawer extends React.Component {
     return (
       <div className={drawerClass}>
         <div className="side">
-          <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+          <Link to="/home" style={{ textDecoration: "none", color: "white" }}>
             <span onClick={this.props.click} className="sidebar-logo-text">
               Placement Cell CITK
             </span>
@@ -40,10 +40,11 @@ class SideDrawer extends React.Component {
             <i className="fas fa-times fa-2x" />
           </span>
         </div>
+
         <ul>
           <li onClick={this.props.click}>
-            <NavLink to="/about-us" exact className="activeclass">
-              About Us
+            <NavLink to="/home" exact className="activeclass">
+              Home
             </NavLink>
           </li>
           <li className="activeclass" onClick={this.handleDropDownAcademics}>
@@ -63,7 +64,7 @@ class SideDrawer extends React.Component {
                 onClick={() => this.props.click(this.handleDropDownAcademics)}
                 className="activeclass"
               >
-                <NavLink to="" exact className="activeclass">
+                <NavLink to="/demographics" exact className="activeclass">
                   Demographics
                 </NavLink>
               </li>
@@ -79,7 +80,7 @@ class SideDrawer extends React.Component {
                 onClick={() => this.props.click(this.handleDropDownAcademics)}
                 className="activeclass"
               >
-                <NavLink to="" exact className="activeclass">
+                <NavLink to="/techclubs" exact className="activeclass">
                   Technical Clubs
                 </NavLink>
               </li>
@@ -91,12 +92,6 @@ class SideDrawer extends React.Component {
             <NavLink to="/our-recruiters" exact className="activeclass">
               Our Recruiters
             </NavLink>
-          </li>
-
-          <li onClick={this.props.click}>
-          <a href={brochurePdf} className="activeclass" target="blank">
-             Brochure
-          </a>
           </li>
 
           <li className="activeclass" onClick={this.handleDropDownWhyUs}>
@@ -130,7 +125,14 @@ class SideDrawer extends React.Component {
           </li>
 
           <li onClick={this.props.click}>
-            <NavLink to="/contact-us" exact className="activeclass">
+          <a href={brochurePdf} className="activeclass" target="blank">
+             Brochure
+          </a>
+          </li>
+
+
+          <li onClick={this.props.click}>
+            <NavLink to="/Contact-us" exact className="activeclass">
               Team
             </NavLink>
           </li>

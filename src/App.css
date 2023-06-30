@@ -8,6 +8,8 @@
   width: 100%;
   background-color: #E08E6D;
   height: 60px;
+  position: fixed;
+  z-index: 2000;
 }
 
 .toolbar_navigation {
@@ -364,6 +366,8 @@ body {
   }
 }
 
+
+
 .footer-col h2 {
   font-size: 16px;
   text-transform: uppercase;
@@ -471,9 +475,9 @@ body {
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
   border-bottom: 2px solid #88c3d0;
 }
-me .placement-team-heading {
+.placement-team-heading {
   font-size: 40px;
-  margin-top: 20px !important;
+  margin-top: 70px !important;
   background-color: white !important;
   color: #083e67;
   border: none !important;
@@ -506,7 +510,7 @@ me .placement-team-heading {
   padding: 10px;
   width: 98%;
   background-color: #f5f5f5;
-  margin-top: 0;
+  margin-top: 0px;
   border: 0.3px solid #eee;
   margin-top: 1.5vw;
 }
@@ -536,14 +540,15 @@ me .placement-team-heading {
 .whyus-o-container {
   display: flex;
   justify-content: center;
+  margin-top: 60px;
 }
 
 .whyus-container {
-  width: 80%;
+  width: 90%;
   background-color: #f9f9f9;
   padding: 0 20px;
   margin: 20px;
-  border: #e8ebef solid 0.2vw;
+  border: #e9e8ef solid 0.2vw;
 }
 
 .whyus-container h1 {
@@ -617,10 +622,11 @@ me .placement-team-heading {
   flex-direction: column;
   align-items: center;
   margin: 20px 0;
+  margin-top: 60px;
 }
 
 .procedure-wrapper {
-  width: 80%;
+  width: 90%;
   background-color: #f9f9f9;
   padding: 20px 20px;
   margin: 20px;
@@ -694,26 +700,136 @@ me .placement-team-heading {
   margin: 30px 0;
 }
 
+.procedure-wrappero {
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 20px 20px;
+  margin: 20px;
+  border: #e8ebef solid 0.2vw;
+}
+
+.procedure-wrappero h1 {
+  text-align: center;
+  margin: 20px 0;
+  margin-bottom: 35px;
+  color: black;
+}
+
+.sub-part h2 {
+  font-size: 20px !important;
+  color: #350011;
+}
+
+.sub-part p {
+  margin: 10px 0 !important;
+}
+
+.procedure-wrappero h2 {
+  margin-top: 20px;
+  font-size: 30px;
+  text-align: center;
+  color: black;
+}
+
+.sub-part h2,
+.ph-subheading {
+  font-size: 23px !important;
+  color: navy !important;
+  text-align: left !important;
+}
+
+.procedure-wrappero p {
+  margin: 25px 20px;
+  color: #2b000e;
+  text-align: justify;
+}
+
+.policies-heading {
+  font-size: 2em;
+}
+
+.procedure-wrappero a {
+  text-decoration: none;
+  color: #3394ff;
+}
+
+.procedure-wrappero strong {
+  color: #414141;
+  font-weight: 700;
+}
+
+@media (max-width: 545px) {
+  .procedure-wrappero {
+    width: 100%;
+  }
+}
+
+.custom-hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0));
+  margin: 30px 0;
+}
 /*Home Page Component */
 
 .homepic {
   margin: 0 auto;
-  margin-top: 25px;
-  width: 85%;
+  margin-top: 75px;
+  position: relative;
+  width: 98%;
+  height: 400px;
+    /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+/*.homepic img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: fadeImage 4s infinite;
+}*/
+
+@keyframes fadeImage {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .logo-img {
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  opacity: 0;
+  animation: fadeImage 20s infinite;
 }
 
 @media (max-width: 638px) {
   .logo-img {
     width: 100%;
     max-width: 100%;
+    height: 150px;
   }
   .homepic {
     max-width: 100%;
     width: 100%;
+    height: 150px;
   }
 }
 
@@ -986,6 +1102,7 @@ me .placement-team-heading {
 
 .pr-outer-container {
   text-align: center;
+  margin-top: 80px;
 }
 
 .pr-sub-heading {
@@ -1021,7 +1138,7 @@ me .placement-team-heading {
 }
 
 .pr-inner-box {
-  width: 95%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1033,7 +1150,7 @@ me .placement-team-heading {
 }
 
 .pr-inner-box img {
-  width: 150px;
+  width: 200px;
   margin: 25px 10px;
 }
 
@@ -1219,21 +1336,65 @@ me .placement-team-heading {
 
 /* About Component*/
 
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.Left {
+  animation-name: slideInLeft;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1
+}
+
+.Right {
+  animation-name: slideInRight;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1
+}
+
 .abt1,
 .abt3 {
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: navy;
+  animation-name: slideInLeft;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1
 }
 
 .abt1 {
   margin-top: 3vw;
   color: black;
+  animation-name: slideInRight;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1
 }
 
-.abt3 {
-  margin-top: 10px;
-  margin-bottom: 20px;
-  color: navy;
-}
 .abt-text {
   color: #19040e;
   width: 70%;
@@ -1254,8 +1415,8 @@ me .placement-team-heading {
 
 .courses h1 {
   text-align: center;
-  margin-top: 1.5vw;
-  font-size: 35px;
+  margin-top: 4ch;
+  font-size: 40px;
   color: black;
   margin-bottom: 2vw;
 }
@@ -1271,7 +1432,7 @@ me .placement-team-heading {
   background: #f5f5f5;
   margin-bottom: 2vw;
   padding: 10px;
-  width: 95%;
+  width: 100%;
   list-style: none;
 }
 .courses-overview {
@@ -1299,8 +1460,17 @@ me .placement-team-heading {
 .courses {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
 }
+
+@media (max-width: 768px) {
+  .courses {
+    padding: 15px;
+    width: 100%;
+  }
+}
+
 /* 
 Card Component */
 
@@ -1506,6 +1676,7 @@ Card Component */
 .drp-down .open .side-drawer li {
   margin-left: 15px;
 }
+
 /* Demographics Component */
 
 .gender-ratio-outer {
@@ -1515,7 +1686,7 @@ Card Component */
 }
 
 .gender-ratio-inner {
-  width: 100%;
+  width: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1531,7 +1702,7 @@ Card Component */
     width: 95% !important;
   }
   .gender-ratio-row img {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
 
@@ -1541,16 +1712,17 @@ Card Component */
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .gender-ratio-row p {
   width: 40%;
   margin: 20px 40px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .gender-ratio-row img {
-  width: 185px;
+  width: 130px;
   align-self: center;
 }
 
@@ -1575,6 +1747,7 @@ Card Component */
 
 .demo h1 {
   text-align: center;
+  margin-top: 5ch;
   /* font-size */
 }
 .subheads {
@@ -1721,7 +1894,7 @@ Card Component */
 
 /* Button style ends */
 
-/* Dev Style starts*/
+/* MOU's Section */
 
 .snip1560 {
   top: 0;
@@ -1799,7 +1972,6 @@ Card Component */
   color: #04020c;
   border: none !important;
   font-weight: bold;
-
 }
 
 .mou-team {
@@ -1807,6 +1979,7 @@ Card Component */
   display: flex;
   align-items: center;
   flex-flow: column wrap;
+  margin-top: 7ch;
 }
 
 .mou-coordinators {
@@ -1830,4 +2003,479 @@ Card Component */
   font-size: 30px;
   font-weight: bold;
   color: grey;
+}
+
+@media only screen and (max-width: 500px) {
+  .snip1560 {
+    margin: 20px;
+    font-family: "Open Sans", sans-serif;
+      position: center;
+      display: inline-block;
+      overflow: hidden;
+    min-width: auto;
+    max-width: none;
+    width: auto;
+    border: none;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    background-color: white;
+    color: #2b2b2b;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-out 0s;
+    box-sizing: content-box;
+    border: 5px solid grey;
+  }
+
+  .snip1560 .profile-image {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+    border: 2px solid grey;
+  }
+
+  .snip1560 .profile-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0;
+    box-sizing: content-box;
+    border: 3px solid grey;
+  }
+
+  .snip1560 figcaption {
+    padding: 5% 5% 5%;
+  }
+
+  .snip1560 h3 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .snip1560 h5 {
+    font-size: 14px;
+  }
+
+  .mou-heading {
+    font-size: 24px;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .mou-team {
+    flex-direction: column;
+  }
+
+  .mou-coordinators-wrapper {
+    width: 100%;
+  }
+
+  .mou-detail {
+    font-size: 18px;
+  }
+}
+
+/* Technical Clubs */
+
+.custom-list {
+  list-style: disc !important;
+}
+
+.custom-list li {
+  position: relative;
+  border: 0px none;
+  padding: 10px 0 0px;
+  /* display: block; */
+  margin: 10px 10px;
+  padding-right: 10px;
+}
+
+.ph-subheading {
+  font-size: 25px !important;
+}
+
+.procedure-outerr {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  animation-name: fadeInn;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+}
+
+.procedure-wrapperr {
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 20px 20px;
+  margin: 0px;
+  border: #0a1ed6 solid 0.01vw;
+  animation-name: fadeInn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.procedure-wrapperrr {
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 20px 20px;
+  margin: 0px;
+  border: #0a1ed6 solid 0.1vw;
+  animation-name: fadeInn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  margin-top: 5ch;
+}
+
+.procedure-wrapperrr.animation {
+  opacity: 1;
+  /* Show the boxes when the animation class is added */
+}
+
+.procedure-wrapperrr.animation h2 {
+  animation: fadeInn 0.5s ease;
+  /* Apply the fadeIn animation to the h2 element */
+}
+
+.procedure-wrapperrr.animation .club-info {
+  animation: fadeInn 3s ease;
+  /* Apply the fadeIn animation to the club-info element */
+}
+
+.procedure-wrapperrr h1 {
+  text-align: center;
+  margin: 20px 0;
+  margin-bottom: 35px;
+  color: black;
+}
+
+.procedure-wrapperr.animation {
+  opacity: 1;
+  /* Show the boxes when the animation class is added */
+}
+
+.procedure-wrapperr.animation h2 {
+  animation: fadeInn 0.5s ease;
+  /* Apply the fadeIn animation to the h2 element */
+}
+
+.procedure-wrapperr.animation .club-info {
+  animation: fadeInn 3s ease;
+  /* Apply the fadeIn animation to the club-info element */
+}
+
+@keyframes fadeInn {
+  from {
+    opacity: 0;
+    /* Initial state */
+    transform: translateY(-20px);
+    /* Initial position */
+  }
+
+  to {
+    opacity: 1;
+    /* Final state */
+    transform: translateY(0);
+    /* Final position */
+  }
+}
+
+.procedure-wrapperr h1 {
+  text-align: center;
+  margin: 20px 0;
+  margin-bottom: 35px;
+  color: black;
+}
+
+.procedure-wrapperrr h1 {
+  text-align: center;
+  margin: 20px 0;
+  margin-bottom: 35px;
+  color: black;
+}
+
+.sub-part h2 {
+  font-size: 20px !important;
+  color: #350011;
+}
+
+.sub-part p {
+  margin: 10px 0 !important;
+}
+
+.procedure-wrapperr h2 {
+  margin-top: 20px;
+  font-size: 30px;
+  text-align: center;
+  color: black;
+}
+
+.procedure-wrapperrr h2 {
+  margin-top: 20px;
+  font-size: 30px;
+  text-align: center;
+  color: black;
+}
+
+.sub-part h2,
+.ph-subheading {
+  font-size: 23px !important;
+  color: navy !important;
+  text-align: left !important;
+}
+
+.procedure-wrapperr p {
+  margin: 20px 0;
+  color: #2b000e;
+}
+
+.procedure-wrapperrr p {
+  margin: 20px 0;
+  color: #2b000e;
+}
+
+.policies-heading {
+  font-size: 2em;
+}
+
+.procedure-wrapperr a {
+  text-decoration: none;
+  color: #3394ff;
+}
+
+.procedure-wrapperr strong {
+  color: #414141;
+  font-weight: 700;
+}
+
+.custom-hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0));
+  margin: 30px 0;
+}
+
+.gender-ratio-outer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.gender-ratio-inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+/* Mobile styles */
+
+@media (max-width: 545px) {
+  .procedure-wrapperr {
+    width: 100%;
+  }
+     .procedure-wrapperrr {
+       width: 100%;
+     }
+  .sub-part h2,
+  .ph-subheading,
+  .procedure-wrapperr h2,
+  .procedure-wrapperr p {
+    font-size: 18px !important;
+    max-width: 100%;
+;
+  }
+  .procedure-wrapperr h1 {
+    margin: 10px 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+    .procedure-wrapperrr h2,
+    .procedure-wrapperrr p {
+      font-size: 18px !important;
+    }
+  
+    .procedure-wrapperrr h1 {
+      margin: 10px 0;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+  .procedure-wrapperr img {
+    max-width: 100%;
+    height: auto;
+  }
+  .custom-list {
+    list-style: disc !important;
+    padding-left: 0px;
+  }
+  .procedure-wrapperr p {
+    margin: 10px 0;
+    margin-bottom: 15px;
+  }
+    .procedure-wrapperrr p {
+      margin: 10px 0;
+      margin-bottom: 15px;
+    }
+}
+
+.club-info {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.club-info p {
+  width: 45%;
+  margin: 0px 110px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.club-info img {
+  width: 460px;
+  align-self: centre;
+}
+
+.club-info .image-container {
+  position: relative;
+  width: 500px;
+  /* Adjust as needed */
+  overflow: hidden;
+}
+
+.club-info .image-container img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.club-info .image-container button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.club-info .image-container #prevButton {
+  left: 10px;
+}
+
+.club-info .image-container #nextButton {
+  right: 10px;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .club-info {
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+  }
+
+  .club-info p {
+    width: 100%;
+    margin: 10px;
+    font-size: 16px;
+    text-align: center;
+    text-align: justify;
+  }
+
+  .club-info img {
+    width: 100%;
+    align-self: center;
+    margin-top: 10px;
+  }
+
+  .club-info .image-container {
+    width: 100%;
+    max-width: 500px; /* Adjust as needed */
+  }
+
+  .club-info .image-container button {
+    position: relative;
+    top: auto;
+    transform: none;
+    margin-top: 10px;
+  }
+
+  .club-info .image-container #prevButton {
+    left: 0;
+    margin-right: 5px;
+  }
+
+  .club-info .image-container #nextButton {
+    right: 0;
+    margin-left: 5px;
+  }
+}
+
+
+.gender {
+  width: 500px !important;
+}
+
+.gender-ratio-outer h1 {
+  margin-top: 25px;
+}
+
+/* .gender-ratio-row:nth-last-child(1) {
+  display: flex;
+  flex-direction: column;
+}
+
+.gender-ratio-row img:nth-last-child(1) {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 96%;
+} */
+
+.demo h1 {
+  text-align: center;
+  /* font-size */
+}
+
+.subheads {
+  font-size: 25px;
+}
+
+.student {
+  margin-left: 70%;
+  width: 30%;
+}
+
+.strength {
+  width: 20%;
+}
+
+@media (max-width: 600px) {
+  .demo h3 {
+    margin-left: 42%;
+  }
+
+  .demo h1 {
+    font-size: 30px;
+  }
+}
+
+.gender-ratio-inner h1 {
+  color: navy;
+}
+
+.demo-head {
+  /* font-size:50px; */
+  margin-top: 2%;
+  color: black;
+  font-size: 35px;
 }

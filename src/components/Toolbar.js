@@ -9,17 +9,19 @@ const Toolbar = props => (
       <div>
         <ToggleButton click={props.sideDrawerToggler} />
       </div>
-      <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+      <Link to="/home" style={{ textDecoration: "none", color: "white" }}>
         <div className="logo">Placement Cell CITK</div>
       </Link>
       <div className="spacer" />
       <div className="nav-elements">
         <ul>
+
           <li>
-            <NavLink to="/about-us" exact className="activeclass">
-              About Us
+            <NavLink to="/home" exact className="activeclass">
+              Home
             </NavLink>
           </li>
+
           <li className="dropdownmenu">
             <button className="dropbtn">
               <span>Academics </span>
@@ -29,27 +31,24 @@ const Toolbar = props => (
               <NavLink to="/courses" exact className="activeclass">
                 Courses
               </NavLink>
-              <NavLink to="/" exact className="activeclass">
+              <NavLink to="/demographics" exact className="activeclass">
                 Demographics
               </NavLink>
               <NavLink to="/mou" exact className="activeclass">
                 MOU's
               </NavLink>
-              <NavLink to="" exact className="activeclass">
+              <NavLink to="/techclubs" exact className="activeclass">
                 Technical Clubs
               </NavLink>
             </div>
           </li>
+
           <li>
             <NavLink to="/our-recruiters" exact className="activeclass">
               Our Recruiters
             </NavLink>
           </li>
-          <li>
-          <a href={brochurePdf} className="activeclass" target="blank">
-             Brochure
-          </a>
-          </li>
+
           <li className="dropdownmenu">
             <button className="dropbtn">
               <span>Why Us </span>
@@ -69,6 +68,13 @@ const Toolbar = props => (
               Procedure
             </NavLink>
           </li>
+          
+          <li>
+          <a href={brochurePdf} className="activeclass" target="blank">
+             Brochure
+          </a>
+          </li>
+
           <li>
             <NavLink to="/contact-us" exact className="activeclass">
               Team

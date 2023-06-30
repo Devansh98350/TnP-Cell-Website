@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, {useState, useEffect} from "react";
 import { Collapse, Button } from 'reactstrap';
 import { BsCaretDownFill, BsFillCaretUpFill } from "react-icons/bs";
 import wiproLogo from "../assets/company_logos/wipro.jpeg";
-import amazonLogo from "../assets/company_logos/amazon.png";
+import amazon from "../assets/company_logos/amazon.png";
 import byjus from "../assets/company_logos/byjus.png"
 import cognizant from "../assets/company_logos/cognizant.png"
 import accenture from "../assets/company_logos/accenture.png" 
@@ -25,37 +25,57 @@ import indianOil from "../assets/company_logos/IndianOil.png"
 import visteon from "../assets/company_logos/visteon.png"
 import testbook from "../assets/company_logos/testbook.png"
 import mcafee from "../assets/company_logos/mcafee.png"
-import evertz from "../assets/company_logos/evertz.jpg"
-import simens from "../assets/company_logos/simens.jpg"
+import evertz from "../assets/company_logos/evertz.png"
+import simens from "../assets/company_logos/siemens.png"
 import jpmorgan from "../assets/company_logos/jpmorgan.png"
 import zwayam from "../assets/company_logos/zwayam.jpg"
 import klar from "../assets/company_logos/klar.jpg"
 import tiger from "../assets/company_logos/tiger.jpg"
-import speakify from "../assets/company_logos/speakify.jpg"
+import speakify from "../assets/company_logos/speakify.png"
 import mindtree from "../assets/company_logos/mindtree.jpg"
 import fidelity from "../assets/company_logos/fidelity.png"
 import delo from "../assets/company_logos/delo.png"
-import syno from "../assets/company_logos/syno.jpg"
-import nic from "../assets/company_logos/nic.jpg"
+import syno from "../assets/company_logos/synopsys.png"
+import nic from "../assets/company_logos/nic.png"
 import openfive from "../assets/company_logos/openfive.png"
-import quop from "../assets/company_logos/quop.jpg"
 import samsung from "../assets/company_logos/samsung.png"
-import cisco from "../assets/company_logos/cisco.jpg"
-import qualcom from "../assets/company_logos/qualcom.jpg"
-import dell from "../assets/company_logos/dell.jpg"
+import cisco from "../assets/company_logos/cisco.png"
+import qualcom from "../assets/company_logos/qualcomm.png"
+import dell from "../assets/company_logos/dell.png"
 import ct from "../assets/company_logos/ct.jpg"
-import cgi from "../assets/company_logos/cgi.jpg"
-import intel from "../assets/company_logos/intel.jpg"
-import flipcart from "../assets/company_logos/flipcart.jpg"
+import cgi from "../assets/company_logos/cgi.png"
+import intel from "../assets/company_logos/intel.png"
+import flipcart from "../assets/company_logos/flipcart.jpeg"
 import hp from "../assets/company_logos/hp.jpg"
+import carelon from "../assets/company_logos/carelon.png"
+import geek from "../assets/company_logos/geek.png"
+import sutherland from "../assets/company_logos/sutherland.png"
+import capace from "../assets/company_logos/capace.jpg"
+import apt from "../assets/company_logos/apt.jpg"
+import flash from "../assets/company_logos/flash.jpg"
+import adityabirla from "../assets/company_logos/aditya.png"
+import resustain from "../assets/company_logos/re.png"
+import dristi from "../assets/company_logos/dristi.png"
+import amul from "../assets/company_logos/amul.jpg"
+import ditto from "../assets/company_logos/ditto.png"
+import gyanhomm from "../assets/company_logos/gyan.jpg"
+import britania from "../assets/company_logos/britannia.png"
+import ntpc from "../assets/company_logos/ntpc.png"
+import ongc from "../assets/company_logos/ongc.jpg"
+import parle from "../assets/company_logos/parle.png"
+import simplistic from "../assets/company_logos/simplistic.jpg"
+import latent from "../assets/company_logos/latent.jpg"
 
 
-const PastRecruiters = props => {
+const OurRecruiters = props => {
   const [isOpenFirst] = useState(true);
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const toggle = () => {
     setIsOpen(!isOpen)
   }
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="pr-outer-container">
       <h1 className="pr-main-heading">Our Recruiters</h1>
@@ -63,40 +83,67 @@ const PastRecruiters = props => {
         <div className="pr-inner-wrapper">
           <div className="pr-inner-box">
             <div className="pr-inner-row">
-              <img src={amazonLogo} alt="Amazon" />
-              <img src={accenture} alt="Flipkart" />
-              <img src={infosys} alt="314ecorp" />
-              <img src={cognizant} alt="Acko" />
-              <img src={capgemini} alt="Intel" />
+              <img src={amazon} alt="amazon" />
+              <img src={accenture} alt="accenture" />
+              <img src={infosys} alt="infosys" />
+              <img src={cognizant} alt="cognizant" />
+              <img src={capgemini} alt="capgemini" />
             </div>
 
             <div className="pr-inner-row">
-              <img src={wiproLogo} alt="American Express" />
-              <img src={csscrop} alt="AMD" />
-              <img src={vodafone} alt="BigBasket" />
-              <img src={byjus} alt="Byjus" />
-              <img src={agilent} alt="Capgemini" />
+              <img src={wiproLogo} alt="wiproLogo" />
+              <img src={csscrop} alt="csscrop" />
+              <img src={vodafone} alt="vodafone" />
+              <img src={byjus} alt="byjus" />
+              <img src={agilent} alt="agilent" />
             </div>
 
             <div className="pr-inner-row">
-              <img src={ericsson} alt="Codenation" />
-              <img src={bisleri} alt="cognitio" />
-              <img src={drdo} alt="Cognizant" />
-              <img src={jio} alt="Cogoport" />
-              <img src={invectus} alt="Accenture" />
+              <img src={ericsson} alt="ericsson" />
+              <img src={bisleri} alt="bisleri" />
+              <img src={drdo} alt="drdo" />
+              <img src={jio} alt="jio" />
+              <img src={invectus} alt="invectus" />
             </div>
 
             <div className="pr-inner-row">
-              <img src={allsec} alt="Albatronix" />
-              <img src={railway} alt="Cred" />
-              <img src={zaloni} alt="DarwinBox" />
-              <img src={itcinfotec} alt="Deloitte" />
-              <img src={indianOil} alt="Dolcera" />
+              <img src={allsec} alt="allsec" />
+              <img src={railway} alt="railways" />
+              <img src={zaloni} alt="zaloni" />
+              <img src={itcinfotec} alt="itcinfotec" />
+              <img src={indianOil} alt="indianOil" />
             </div>
 
             <div className="pr-inner-row">
-              <img src={visteon} alt="FIS" />
+              <img src={visteon} alt="visteon" />
+              <img src={sutherland} alt="sutherland" />
+              <img src={capace} alt="capace" />
+              <img src={apt} alt="apt" />
+              <img src={flash} alt="flash" />
             </div>
+
+            <div className="pr-inner-row">
+              <img src={adityabirla} alt="adityabirla" />
+              <img src={resustain} alt="resustain" />
+              <img src={dristi} alt="dristi" />
+              <img src={amul} alt="amul" />
+              <img src={ditto} alt="ditto" />
+            </div>
+
+            <div className="pr-inner-row">
+              <img src={gyanhomm} alt="gyanhomm" />
+              <img src={britania} alt="britania" />
+              <img src={parle} alt="parle" />
+              <img src={ntpc} alt="ntpc" />
+              <img src={ongc} alt="ongc" />
+            </div>
+
+            <div className="pr-inner-row">
+              <img src={simplistic} alt="simplistic" />
+              <img src={latent} alt="latent" />
+            </div>
+
+            
 
           </div>
         </div>
@@ -110,20 +157,23 @@ const PastRecruiters = props => {
         <div className="pr-inner-wrapper">
           <div className="pr-inner-box">
             <div className="pr-inner-row">
-              <img src={walmartglobaltech} alt="Directi" />
+              <img src={walmartglobaltech} alt="walmartglobaltech" />
+              <img src={amazon} alt="amazon" />
               <img src={testbook} alt="testbook" />
               <img src={mcafee} alt="mcafee" />
-              <img src={evertz} alt="evertz" />
+              <img src={flipcart} alt="flipcart"/>
             </div>
 
             <div className="pr-inner-row">
               <img src={simens} alt="simens" />
               <img src={jpmorgan} alt="jpmorgan" />
-              <img src={zwayam} alt="zwayam" />
+              <img src={evertz} alt="evertz" />
               <img src={klar} alt="klar" />
+              <img src={intel} alt="intel" />
             </div>
 
             <div className="pr-inner-row">
+              <img src={qualcom} alt="qualcom" />
               <img src={tiger} alt="tiger" />
               <img src={speakify} alt="speakify" />
               <img src={mindtree} alt="mindtree" />
@@ -131,6 +181,7 @@ const PastRecruiters = props => {
             </div>
 
             <div className="pr-inner-row">
+              <img src={cisco} alt="cisco" />
               <img src={delo} alt="delo" />
               <img src={syno} alt="syno" />
               <img src={nic} alt="nic" />
@@ -138,22 +189,18 @@ const PastRecruiters = props => {
             </div>
 
             <div className="pr-inner-row">
-              <img src={quop} alt="quop" />
+              <img src={carelon} alt="carelon" />
               <img src={samsung} alt="samsung" />
-              <img src={cisco} alt="cisco" />
-              <img src={qualcom} alt="qualcom" />
-            </div>
-
-            <div className="pr-inner-row">
+              <img src={hp} alt="hp" />
               <img src={dell} alt="dell" />
               <img src={ct} alt="ct" />
-              <img src={cgi} alt="cgi" />
-              <img src={intel} alt="intel" />
             </div>
 
             <div className="pr-inner-row">
-              <img src={flipcart} alt="flipcart" />
-              <img src={hp} alt="hp" />
+              <img src={cgi} alt="cgi" />
+              <img src={geek} alt="geek" />
+              <img src={tiger} alt="tiger" />
+              <img src={zwayam} alt="zwayam" />
             </div>
 
             <h3>And many more...</h3>
@@ -167,4 +214,4 @@ const PastRecruiters = props => {
   );
 };
 
-export default PastRecruiters;
+export default OurRecruiters;

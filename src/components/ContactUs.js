@@ -1,6 +1,7 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Card from "./Card";
 import agm from "../assets/images/tpo.jpg";
+import pkn from "../assets/images/pkn.jpg";
 import ifti from "../assets/team23/ifti.jpeg";
 import amarjeet from "../assets/team23/amarjeet.png";
 import devanshu from "../assets/team23/devanshu.jpeg";
@@ -9,9 +10,11 @@ import chand from "../assets/team23/chand.jpg";
 import pras from "../assets/team23/pras.png";
 import rahan from "../assets/team23/rahan.jpg";
 
-const contactUs = () => {
+const ContactUs = props => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    <React.Fragment>
       <div className="contact-outer" style={{ backgroundColor: "white" }}>
         <div className="placement-team">
           <h1 className="placement-team-heading">The Team</h1>
@@ -30,11 +33,27 @@ const contactUs = () => {
                 isEmail={true}
               />
               <Card
+                src={pkn}
+                alt="Dr. Prakash Kumar Nayak"
+                name="Dr. Prakash Kumar Nayak"
+                isTeacher={false}
+                position="Training and Placement Officer"
+                email="tnpcell@cit.ac.in"
+                linkedin="https://www.linkedin.com/in/prakash-kumar-nayak-phd-75a3b18/"
+                islinkedin={true}                
+                isPhone={false}
+                isEmail={true}
+              />
+            </div>
+          </div>
+          <div className="placement-coordinators">
+            <div className="placement-coordinators-wrapper">          
+              <Card
                 src={ifti}
                 alt="Iftiazur Rahman"
                 name="Iftiazur Rahman"
                 isTeacher={false}
-                position="Overall Coordinator"
+                position="Overall Coordinator & Placement Coordinator ECE"
                 email="tnpcell@cit.ac.in "
                 phone="+91-9101176748"
                 linkedin=" https://www.linkedin.com/in/iftiazur-rahman-b19192252"
@@ -63,7 +82,7 @@ const contactUs = () => {
                 position="Placement Coordinator CSE"
                 phone="+91-9262676870"
                 email="tnpcell@cit.ac.in"
-                linkedin="https://www.linkedin.com/in/devanshu-kumar-20b352237/"
+                linkedin="https://www.linkedin.com/in/devanshu-cse/"
                 islinkedin={true}
                 isPhone={true}
                 isEmail={true}
@@ -120,8 +139,7 @@ const contactUs = () => {
           </div>
         </div>
       </div>
-    </React.Fragment>
   );
 };
 
-export default contactUs;
+export default ContactUs;

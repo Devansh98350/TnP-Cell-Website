@@ -33,7 +33,7 @@ const footer = () => {
                 <p className="footer-contact-name">Amarjeet Kumar Singh</p>
                 <p className="footer-contact-position">Placement Coordinator</p>
                 <p>
-                  <a href="tel:+91-8094123615">+91-9065389731</a>
+                  <a href="tel:+91-9065389731">+91-9065389731</a>
                 </p>
                 <p> 
                   <a href="mailto:tnpcell@cit.ac.in">
@@ -43,14 +43,14 @@ const footer = () => {
               </div>
             </div>
             <div className="footer-col-parent">
-              <a href="https://www.linkedin.com/in/devanshu-kumar-20b352237/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/devanshu-cse/" target="_blank" rel="noopener noreferrer">
               <img src={devanshu} alt={"devanshu"} className="footer-img"/>
               </a>
               <div className="footer-col">
                 <p className="footer-contact-name">Devanshu Kumar</p>
                 <p className="footer-contact-position">Placement Coordinator</p>
                 <p>
-                  <a href="tel:+91-8094123615">+91-9262676870</a>
+                  <a href="tel:+91-9262676870">+91-9262676870</a>
                 </p>
                 <p> 
                   <a href="mailto:tnpcell@cit.ac.in">
@@ -82,10 +82,10 @@ const footer = () => {
               <p>
               <a href="https://www.techcracy22.in/" target="blank">
                   Technical Fest
-                </a>
+              </a>
               </p>
               <p>
-                <Link to="/">Facilities</Link>
+                <Link to="/Facilities">Facilities</Link>
               </p>
               <p>
                 <Link to="/alumni-speaks">Alumni Speaks</Link>

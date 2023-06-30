@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 import astug from "../assets/mou/astug.jpg";
 import boldtek from "../assets/mou/boldtek.jpg";
@@ -14,6 +14,9 @@ import swedium from "../assets/mou/swedium.jpg";
 import utpmalaysia from "../assets/mou/utpmalaysia.jpg";
 
 const Mousigned = (props) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <React.Fragment>
       <figure className="snip1560">

@@ -1,11 +1,18 @@
-import React from "react";
+import React, {useEffect} from "react";
 import SubCard1 from "./sub-cardCse";
 import SubCard2 from "./sub-cardEce";
+import SubCard4 from "./sub-cardCe";
 import {semList1} from "./semListCse";
 import {semList2} from "./semListEce";
+import {semList4} from "./semListCe";
 
-const Courses = () => (
-  <React.Fragment>
+const Courses = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return (
+    <React.Fragment>
     <div className="courses-outer-wrapper">
       <div className="courses">
         <h1>Courses</h1>
@@ -24,6 +31,12 @@ const Courses = () => (
           includes both theory and lab sessions. The curriculum emphasizes
           importance of applied knowledge, and promotes state-of-the-art
           teaching and learning.
+        </p>
+      </div>
+    </div>
+    <div className="courses-outer-wrapper">
+      <div className="courses">
+        <p className="Computer Science and Engineering">
         </p>
         <button disabled>Computer Science and Engineering</button>
       </div>
@@ -51,11 +64,23 @@ const Courses = () => (
         ))}
       </div>
     </div>
-    
-  </React.Fragment>
-  
-  
-  
-);
+
+    <div className="courses-outer-wrapper">
+      <div className="courses">
+        <p className="Civil Engineering">
+        </p>
+        <button disabled>Civil Engineering</button>
+      </div>
+    </div>
+    <div className="course-outer">
+      <div className="course-inner">
+        {semList4.map((val, index) => (
+          <SubCard4 semNum={val} sem={val} ind={index} key={val + index} />
+        ))}
+      </div>
+    </div>
+    </React.Fragment>
+  );
+};
 
 export default Courses;

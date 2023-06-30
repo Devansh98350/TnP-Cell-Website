@@ -1,28 +1,12 @@
-import React from "react";
+import React, {useEffect} from "react";
 
-const Procedure = props => (
-  <div className="procedure-outer">
-    <div className="procedure-wrapper">
-      <h2 className="special">Placement  Calender</h2>
-      <p>
-        The placement season for the 2024 batch (B.Tech and M.Tech) commences from 
-        26th July 2023. The entire season is divided into two slots:
-      </p>
-      <ul className="custom-list">
-        <li>
-          <strong>Slot 1:</strong> July 26 - December 31, 2023
-        </li>
-        <li>
-          <strong>Slot 2:</strong> January 17 - June 15, 2024
-        </li>
-      </ul>
-      <p>
-        Recruiters are invited to conduct their entire selection process on mutually 
-        convenient dates during this period. Dates beyond these sessions may also be 
-        considered for selection process keeping in mind the convenience of recruiters 
-        as well as the institute.
-      </p>
-    </div>
+const Procedure = props => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return (
+    <div className="procedure-outer">
     <div className="procedure-wrapper">
       <h2 className="special">Placement Procedure</h2>
         <ul className="custom-list">
@@ -192,6 +176,8 @@ const Procedure = props => (
       </div>
     </div>
   </div>
-);
+  );
+};
 
 export default Procedure;
+
