@@ -2600,3 +2600,118 @@ Card Component */
   color: black;
   font-size: 35px;
 }
+
+.linkedin-icon {
+  font-size: 32px;
+  margin-left: 10px;
+}
+
+/* Add some animation or color changes to make it more attractive */
+.linkedin-icon:hover {
+  transform: scale(1.2); /* Add a zoom effect on hover */
+  color: red; /* Change the icon color on hover (LinkedIn blue color) */
+  transition: transform 0.2s ease, color 0.2s ease; /* Add smooth transition */
+}
+
+.facebook-icon {
+  font-size: 32px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+/* Add some animation or color changes to make it more attractive */
+.facebook-icon:hover {
+  transform: scale(1.2); /* Add a zoom effect on hover */
+  color: red; /* Change the icon color on hover (LinkedIn blue color) */
+  transition: transform 0.2s ease, color 0.2s ease; /* Add smooth transition */
+}
+
+.course-para {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  opacity: 0; /* Start with 0 opacity to create fade-in effect */
+  animation: fadeIn 1.5s ease-in-out forwards; /* Animation properties */
+}
+
+/* Define the fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px); /* Optional: Slide up while fading in */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fm {
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* For  how to Reach section*/
+.box-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.box:first-child {
+  margin-top: 40px; /* Add top margin to the first box */
+}
+
+.box-image {
+  flex: 1;
+  padding: 20px;
+}
+
+.box-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.box-content {
+  flex: 2;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .box {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .box-image,
+  .box-content {
+    flex: 1;
+  }
+
+  .box-image img {
+    margin-bottom: 20px;
+  }
+}

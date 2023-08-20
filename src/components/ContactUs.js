@@ -9,6 +9,7 @@ import ashutosh from "../assets/team23/ashutosh.jpg";
 import chand from "../assets/team23/chand.jpg";
 import pras from "../assets/team23/pras.png";
 import rahan from "../assets/team23/rahan.jpg";
+import subh from "../assets/team23/sjr.jpg";
 import Layout from "./Layout";
 
 const ContactUs = (props) => {
@@ -23,6 +24,18 @@ const ContactUs = (props) => {
           <div className="placement-coordinators">
             <div className="placement-coordinators-wrapper">
               <Card
+                src={subh}
+                alt="Dr. Subhajit Ray"
+                name="Dr. Subhajit Ray"
+                isTeacher={false}
+                position="Faculty-in-Charge"
+                email="tnp@cit.ac.in"
+                linkedin="https://www.linkedin.com/in/dr-subhojit-ray-06270642/"
+                islinkedin={true}
+                isPhone={false}
+                isEmail={true}
+              />
+              <Card
                 src={agm}
                 alt="Dr. Agile Mathew"
                 name="Dr. Agile Mathew"
@@ -31,7 +44,7 @@ const ContactUs = (props) => {
                 email="tnp@cit.ac.in"
                 linkedin="https://www.linkedin.com/in/agile-mathew-7365a6181/"
                 islinkedin={true}
-                phone="+91-8399829113"
+                phone="+91-9957817471"
                 isPhone={true}
                 isEmail={true}
               />
@@ -44,7 +57,7 @@ const ContactUs = (props) => {
                 email="tnp@cit.ac.in"
                 linkedin="https://www.linkedin.com/in/prakash-kumar-nayak-phd-75a3b18/"
                 islinkedin={true}
-                phone="+91-8399829113"
+                phone="+91-94353-05453"
                 isPhone={true}
                 isEmail={true}
               />
@@ -74,9 +87,11 @@ const ContactUs = (props) => {
                 email="tnpcell@cit.ac.in "
                 phone="+91-9065389731"
                 linkedin="https://www.linkedin.com/in/amarjeet-cse/"
+                Github="https://github.com/Amarjeet2909"
                 islinkedin={true}
                 isPhone={true}
                 isEmail={true}
+                isGithub={true}
               />
               <Card
                 src={devanshu}
@@ -87,9 +102,11 @@ const ContactUs = (props) => {
                 phone="+91-9262676870"
                 email="tnpcell@cit.ac.in"
                 linkedin="https://www.linkedin.com/in/devanshu-cse/"
+                Github="https://github.com/Devansh98350"
                 islinkedin={true}
                 isPhone={true}
                 isEmail={true}
+                isGithub={true}
               />
             </div>
           </div>

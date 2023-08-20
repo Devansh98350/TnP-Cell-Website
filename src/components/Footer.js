@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faFacebook } from "@fortawesome/free-brands-svg-icons";
 
-const footer = () => {
+function footer() {
   return (
     <footer>
       <div className="footer">
@@ -10,7 +12,7 @@ const footer = () => {
             <div className="footer-col">
               <h2>Contact Us</h2>
               <p>
-                Central Institute of Technology Kokrajhar
+                CIT Kokrajhar
                 <br />
                 BTC, Kokrajhar, Assam
                 <br />
@@ -18,6 +20,30 @@ const footer = () => {
               </p>
               <p>
                 <a href="mailto:tnpcell@cit.ac.in">tnpcell@cit.ac.in</a>
+                <br></br>
+                <p>
+                  <Link to="/howToReach">How To Reach CITK</Link>
+                </p>
+                <a
+                  href="https://www.linkedin.com/school/t-p-cell-cit-kokrajhar/mycompany/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faLinkedin}
+                    className="linkedin-icon"
+                  />
+                </a>
+                <a
+                  href="https://www.facebook.com/OfficialCITKokrajhar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faFacebook}
+                    className="facebook-icon"
+                  />
+                </a>
               </p>
             </div>
 
@@ -86,6 +112,6 @@ const footer = () => {
       </div>
     </footer>
   );
-};
+}
 
 export default footer;

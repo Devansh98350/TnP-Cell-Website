@@ -5,6 +5,8 @@ import dcomm from "../assets/techclubs/dcomm.jpg";
 import robo from "../assets/techclubs/robo.jpg";
 import design from "../assets/techclubs/design.jpeg";
 import ai from "../assets/techclubs/ai.jpeg";
+import astrophysics from "../assets/techclubs/astro-min.jpg";
+import kons from "../assets/techclubs/kons.jpeg";
 import Layout from "./Layout";
 
 const TechClubs = () => {
@@ -68,6 +70,12 @@ const TechClubs = () => {
             </li>
             <li class="Right">
               <strong>Design Club</strong>
+            </li>
+            <li class="Right">
+              <strong>Astrophysics Club</strong>
+            </li>
+            <li class="Right">
+              <strong>Konstruct Club</strong>
             </li>
           </ul>
         </div>
@@ -233,6 +241,68 @@ const TechClubs = () => {
                   <a href="mailto:designcircleclub@cit.ac.in">
                     {" "}
                     designcircleclub@cit.ac.in
+                  </a>
+                </li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div className="procedure-wrapperr">
+          <h2 className="special">Konstruct Club</h2>
+          <div className="club-info">
+            <img src={kons} alt="" className="design" />
+            <p style={{ fontSize: "18px" }}>
+              KONSTRUCT is a thriving Civil Engineering club at the Central
+              Institute of Technology Kokrajhar. The club is dedicated to
+              promoting knowledge, innovation, and practical skills in the field
+              of civil engineering among its members. It provides a platform for
+              students interested in civil engineering to come together,
+              collaborate, and expand their knowledge of the subject outside of
+              the classroom. Throughout the academic year, the club organizes a
+              variety of activities and events, including workshops, seminars,
+              guest lectures, and hands-on practical sessions. These events are
+              intended to supplement the regular curriculum by providing members
+              with valuable insights into real-world applications and industry
+              practices. KONSTRUCT goes beyond the classroom, building bridges
+              to the community with impactful projects that uplift locals and
+              showcase civil engineering's power, we craft a future of social
+              responsibility. Join us to turn knowledge into action!
+              <ul className="custom-list">
+                <li>
+                  <strong>Email Id: </strong>
+                  <a href="mailto:u20cel2060@cit.ac.in">
+                    {" "}
+                    konstructclub@cit.ac.in
+                  </a>
+                </li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div className="procedure-wrapperr">
+          <h2 className="special">Astrophysics Club</h2>
+          <div className="club-info">
+            <img src={astrophysics} alt="" className="design" />
+            <p style={{ fontSize: "18px" }}>
+              The Astrophysics Club of our college is a vibrant and enthusiastic
+              community that brings together students with a shared passion for
+              the mysteries of the cosmos. Comprised of astronomy enthusiasts,
+              physics majors, and curious minds alike, the club serves as a
+              platform for exploring the wonders of the universe. Regular
+              meetings involve engaging discussions, guest lectures from
+              esteemed professors and researchers, and exciting stargazing
+              sessions using the college's telescope. The club also organizes
+              field trips to observatories and space-related events, fostering a
+              deeper understanding of astrophysical phenomena and the latest
+              developments in the field. With a commitment to expanding
+              knowledge and inspiring awe, the Astrophysics Club empowers its
+              members to dream big and reach for the stars.
+              <ul className="custom-list">
+                <li>
+                  <strong>Email Id: </strong>
+                  <a href="mailto:astrophysicsclub@cit.ac.in">
+                    {" "}
+                    astrophysicsclub@cit.ac.in
                   </a>
                 </li>
               </ul>

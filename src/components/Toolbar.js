@@ -3,7 +3,7 @@ import { NavLink, Link } from "react-router-dom";
 import ToggleButton from "./ToggleButton";
 import brochurePdf from "../assets/Brochure Coming Soon.pdf";
 
-const Toolbar = props => (
+const Toolbar = (props) => (
   <header className="toolbar">
     <nav className="toolbar_navigation">
       <div>
@@ -15,7 +15,6 @@ const Toolbar = props => (
       <div className="spacer" />
       <div className="nav-elements">
         <ul>
-
           <li>
             <NavLink to="/home" exact className="activeclass">
               Home
@@ -68,17 +67,26 @@ const Toolbar = props => (
               Procedure
             </NavLink>
           </li>
-          
-          <li>
-          <a href={brochurePdf} className="activeclass" target="blank">
-             Brochure
-          </a>
-          </li>
 
           <li>
-            <NavLink to="/contact-us" exact className="activeclass">
-              Team
-            </NavLink>
+            <a href={brochurePdf} className="activeclass" target="blank">
+              Brochure
+            </a>
+          </li>
+
+          <li className="dropdownmenu">
+            <button className="dropbtn">
+              <span>Contact Us</span>
+              <i className="fa fa-caret-down" />
+            </button>
+            <div className="dropdown-content">
+              <NavLink to="/contact-us" exact className="activeclass">
+                Our Team
+              </NavLink>
+              <NavLink to="/howToReach" exact className="activeclass">
+                How to Reach us
+              </NavLink>
+            </div>
           </li>
         </ul>
       </div>

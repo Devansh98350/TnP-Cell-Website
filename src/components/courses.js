@@ -2,9 +2,11 @@ import React, { useEffect } from "react";
 import SubCard1 from "./sub-cardCse";
 import SubCard2 from "./sub-cardEce";
 import SubCard4 from "./sub-cardCe";
+import SubCard7 from "./sub-cardFet";
 import { semList1 } from "./semListCse";
 import { semList2 } from "./semListEce";
 import { semList4 } from "./semListCe";
+import { semList5 } from "./semListFet";
 import Layout from "./Layout";
 
 const Courses = () => {
@@ -74,6 +76,20 @@ const Courses = () => {
           <div className="course-inner">
             {semList4.map((val, index) => (
               <SubCard4 semNum={val} sem={val} ind={index} key={val + index} />
+            ))}
+          </div>
+        </div>
+
+        <div className="courses-outer-wrapper">
+          <div className="courses">
+            <p className="Food Engineering & Technology"></p>
+            <button disabled>Food Engineering & Technology</button>
+          </div>
+        </div>
+        <div className="course-outer">
+          <div className="course-inner">
+            {semList5.map((val, index) => (
+              <SubCard7 semNum={val} sem={val} ind={index} key={val + index} />
             ))}
           </div>
         </div>

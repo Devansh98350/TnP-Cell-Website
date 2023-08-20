@@ -5,24 +5,24 @@ import brochurePdf from "../assets/Brochure Coming Soon.pdf";
 class SideDrawer extends React.Component {
   state = {
     showDropDownAcademics: false,
-    showDropdownStatistics: false
+    showDropdownStatistics: false,
   };
   handleDropDownAcademics = () => {
-    this.setState(cs => ({
+    this.setState((cs) => ({
       showDropDownAcademics: !cs.showDropDownAcademics,
-      showDropdownStatistics: false
+      showDropdownStatistics: false,
     }));
   };
   handleDropDownWhyUs = () => {
-    this.setState(cs => ({
+    this.setState((cs) => ({
       showDropDownWhyUs: !cs.showDropDownWhyUs,
-      showDropdownWhyUs: false
+      showDropdownWhyUs: false,
     }));
   };
   handleDropdownStatistics = () => {
-    this.setState(cs => ({
+    this.setState((cs) => ({
       showDropdownStatistics: !cs.showDropdownStatistics,
-      showDropDownAcademics: false
+      showDropDownAcademics: false,
     }));
   };
   render() {
@@ -87,7 +87,6 @@ class SideDrawer extends React.Component {
             </ul>
           ) : null}
 
-
           <li onClick={this.props.click}>
             <NavLink to="/our-recruiters" exact className="activeclass">
               Our Recruiters
@@ -125,20 +124,36 @@ class SideDrawer extends React.Component {
           </li>
 
           <li onClick={this.props.click}>
-          <a href={brochurePdf} className="activeclass" target="blank">
-             Brochure
-          </a>
+            <a href={brochurePdf} className="activeclass" target="blank">
+              Brochure
+            </a>
           </li>
 
-
-          <li onClick={this.props.click}>
-            <NavLink to="/Contact-us" exact className="activeclass">
-              Team
-            </NavLink>
+          <li className="activeclass" onClick={this.handleDropDownWhyUs}>
+            Contact Us
+            <i className="fa fa-caret-down" />
           </li>
-
+          {this.state.showDropDownWhyUs ? (
+            <ul className="drp-down">
+              <li
+                onClick={() => this.props.click(this.handleDropDownWhyUs)}
+                className="activeclass"
+              >
+                <NavLink to="/Contact-us" exact className="activeclass">
+                  Our Team
+                </NavLink>
+              </li>
+              <li
+                onClick={() => this.props.click(this.handleDropDownWhyUs)}
+                className="activeclass"
+              >
+                <NavLink to="/howToReach" exact className="activeclass">
+                  How to Reach Us
+                </NavLink>
+              </li>
+            </ul>
+          ) : null}
         </ul>
-
       </div>
     );
   }
