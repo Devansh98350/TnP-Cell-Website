@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/TnP-Cell-Website/static/css/main.23ecd701.css",
-    "main.js": "/TnP-Cell-Website/static/js/main.f60430fa.js",
+    "main.css": "/TnP-Cell-Website/static/css/main.098b3d72.css",
+    "main.js": "/TnP-Cell-Website/static/js/main.0f921361.js",
     "static/media/dcomm.jpg": "/TnP-Cell-Website/static/media/dcomm.895cb6f5f36f6dcd4ed5.jpg",
     "static/media/kons.jpeg": "/TnP-Cell-Website/static/media/kons.50cbeece6a6671884472.jpeg",
     "static/media/astro-min.jpg": "/TnP-Cell-Website/static/media/astro-min.cc03b09e626ad75833d5.jpg",
     "static/media/chand.jpg": "/TnP-Cell-Website/static/media/chand.de09355bf2faf3c40388.jpg",
+    "static/media/cit.png": "/TnP-Cell-Website/static/media/cit.bb497b1c5c0f63381b6f.png",
     "static/media/rahan.jpg": "/TnP-Cell-Website/static/media/rahan.1282978950d90a0759e4.jpg",
     "static/media/CC2.jpg": "/TnP-Cell-Website/static/media/CC2.31486db7b3e23b23f0cd.jpg",
     "static/media/amarjeet.png": "/TnP-Cell-Website/static/media/amarjeet.dff77e69cdeff42ea20e.png",
@@ -75,11 +76,11 @@
     "static/media/sjr.jpg": "/TnP-Cell-Website/static/media/sjr.e88749bc83c50b52e0ff.jpg",
     "static/media/NinmoyDebnath.jpeg": "/TnP-Cell-Website/static/media/NinmoyDebnath.0a915115629e8a90fb84.jpeg",
     "index.html": "/TnP-Cell-Website/index.html",
-    "main.23ecd701.css.map": "/TnP-Cell-Website/static/css/main.23ecd701.css.map",
-    "main.f60430fa.js.map": "/TnP-Cell-Website/static/js/main.f60430fa.js.map"
+    "main.098b3d72.css.map": "/TnP-Cell-Website/static/css/main.098b3d72.css.map",
+    "main.0f921361.js.map": "/TnP-Cell-Website/static/js/main.0f921361.js.map"
   },
   "entrypoints": [
-    "static/css/main.23ecd701.css",
-    "static/js/main.f60430fa.js"
+    "static/css/main.098b3d72.css",
+    "static/js/main.0f921361.js"
   ]
 }
