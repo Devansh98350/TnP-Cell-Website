@@ -21,9 +21,7 @@ function footer() {
               <p>
                 <a href="mailto:tnpcell@cit.ac.in">tnpcell@cit.ac.in</a>
                 <br></br>
-                <p>
-                  <Link to="/howToReach">How To Reach CITK</Link>
-                </p>
+
                 <a
                   href="https://www.linkedin.com/school/t-p-cell-cit-kokrajhar/mycompany/"
                   target="_blank"
@@ -86,6 +84,9 @@ function footer() {
                 <a href="https://www.techcracy22.in/" target="blank">
                   Technical Fest
                 </a>
+              </p>
+              <p>
+                <Link to="/howToReach">How to Reach CITK</Link>
               </p>
               <p>
                 <Link to="/Facilities">Facilities</Link>

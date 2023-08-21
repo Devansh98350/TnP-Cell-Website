@@ -2676,7 +2676,7 @@ a {
 }
 
 .box:first-child {
-  margin-top: 40px; /* Add top margin to the first box */
+  margin-top: 50px; /* Add top margin to the first box */
 }
 
 .box-image {
@@ -2686,6 +2686,7 @@ a {
 
 .box-image img {
   max-width: 100%;
+  width: 500px;
   height: auto;
   display: block;
 }

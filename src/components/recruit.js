@@ -35,6 +35,15 @@ const About = (props) => {
             >
               Internship Drive Form
             </a>
+            <a
+              class="smoothscroll button stroke second"
+              href="/"
+              target="_blank"
+              title="View Our Brochure"
+              rel="noreferrer"
+            >
+              Diploma Placement Drive Form
+            </a>
           </div>
         </div>
         <div className="about-text-wrapper">

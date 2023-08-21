@@ -10,6 +10,10 @@ import chand from "../assets/team23/chand.jpg";
 import pras from "../assets/team23/pras.png";
 import rahan from "../assets/team23/rahan.jpg";
 import subh from "../assets/team23/sjr.jpg";
+import bhaskar from "../assets/team23/Bhaskar.jpeg";
+import Niloptal from "../assets/team23/Nilotpal.jpg";
+import tina from "../assets/team23/Tina.jpeg";
+import abdur from "../assets/team23/Adbur.jpeg";
 import Layout from "./Layout";
 
 const ContactUs = (props) => {
@@ -17,7 +21,7 @@ const ContactUs = (props) => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <Layout title="Contact Us-CITK">
+    <Layout title="Team -CITK">
       <div className="contact-outer" style={{ backgroundColor: "white" }}>
         <div className="placement-team">
           <h1 className="placement-team-heading">The Team</h1>
@@ -147,6 +151,66 @@ const ContactUs = (props) => {
                 linkedin="https://www.linkedin.com/in/prasanta-kumar-deuri-728322186"
                 islinkedin={true}
                 phone="+91-6001820816"
+                email="tnpcell@cit.ac.in"
+                isPhone={true}
+                isEmail={true}
+              />
+            </div>
+          </div>
+          <div className="placement-coordinators">
+            <div className="placement-coordinators-wrapper">
+              <Card
+                src={Niloptal}
+                alt="Nilotpal Das"
+                name="Nilotpal Das"
+                isTeacher={false}
+                position="Placement Coordinator IE"
+                linkedin="https://www.linkedin.com/in/nilotpal-das-094559224"
+                islinkedin={true}
+                phone="+91-7002781195"
+                email="tnpcell@cit.ac.in"
+                isPhone={true}
+                isEmail={true}
+              />
+              <Card
+                src={tina}
+                alt="Tina Poddar"
+                name="Tina Poddar"
+                isTeacher={false}
+                position="Placement Coordinator IE"
+                linkedin="https://www.linkedin.com/in/tina-podder-a09712227"
+                islinkedin={true}
+                phone="+91-9382372856"
+                email="tnpcell@cit.ac.in"
+                isPhone={true}
+                isEmail={true}
+              />
+              <Card
+                src={abdur}
+                alt="Abdur Rouf Ahmed"
+                name="Abdur Rouf Ahmed"
+                isTeacher={false}
+                position="Placement Coordinator MCD"
+                linkedin="https://www.linkedin.com/in/rouf-ahmed-183720287"
+                islinkedin={true}
+                phone="+91-6901851739"
+                email="tnpcell@cit.ac.in"
+                isPhone={true}
+                isEmail={true}
+              />
+            </div>
+          </div>
+          <div className="placement-coordinators">
+            <div className="placement-coordinators-wrapper">
+              <Card
+                src={bhaskar}
+                alt="Bhaskar Jyoti Das"
+                name="Bhaskar Jyoti Das"
+                isTeacher={false}
+                position="Placement Coordinator MCD"
+                linkedin=" https://www.linkedin.com/in/bhaskar-jyoti-das-a38868190"
+                islinkedin={true}
+                phone="+91-7896937331"
                 email="tnpcell@cit.ac.in"
                 isPhone={true}
                 isEmail={true}

@@ -19,6 +19,12 @@ class SideDrawer extends React.Component {
       showDropdownWhyUs: false,
     }));
   };
+  handleDropDownContactUs = () => {
+    this.setState((cs) => ({
+      showDropDownContactUs: !cs.showDropDownContactUs,
+      showDropdownContactUs: false,
+    }));
+  };
   handleDropdownStatistics = () => {
     this.setState((cs) => ({
       showDropdownStatistics: !cs.showDropdownStatistics,
@@ -129,14 +135,14 @@ class SideDrawer extends React.Component {
             </a>
           </li>
 
-          <li className="activeclass" onClick={this.handleDropDownWhyUs}>
+          <li className="activeclass" onClick={this.handleDropDownContactUs}>
             Contact Us
             <i className="fa fa-caret-down" />
           </li>
-          {this.state.showDropDownWhyUs ? (
+          {this.state.showDropDownContactUs ? (
             <ul className="drp-down">
               <li
-                onClick={() => this.props.click(this.handleDropDownWhyUs)}
+                onClick={() => this.props.click(this.handleDropDownContactUs)}
                 className="activeclass"
               >
                 <NavLink to="/Contact-us" exact className="activeclass">
@@ -144,7 +150,7 @@ class SideDrawer extends React.Component {
                 </NavLink>
               </li>
               <li
-                onClick={() => this.props.click(this.handleDropDownWhyUs)}
+                onClick={() => this.props.click(this.handleDropDownContactUs)}
                 className="activeclass"
               >
                 <NavLink to="/howToReach" exact className="activeclass">

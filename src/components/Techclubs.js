@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import cc2 from "../assets/techclubs/CC2.jpg";
+import ca2 from "../assets/techclubs/gdsc.png";
 import cyc1 from "../assets/techclubs/CYC1.jpeg";
 import dcomm from "../assets/techclubs/dcomm.jpg";
-import robo from "../assets/techclubs/robo.jpg";
+import robo from "../assets/techclubs/robo.png";
 import design from "../assets/techclubs/design.jpeg";
 import ai from "../assets/techclubs/ai.jpeg";
 import astrophysics from "../assets/techclubs/astro-min.jpg";
@@ -54,6 +55,9 @@ const TechClubs = () => {
           </p>
           <ul className="custom-list">
             <li class="Right">
+              <strong>GDSC CIT Kokrajhar</strong>
+            </li>
+            <li class="Right">
               <strong>Coding Club</strong>
             </li>
             <li class="Right">
@@ -78,6 +82,40 @@ const TechClubs = () => {
               <strong>Konstruct Club</strong>
             </li>
           </ul>
+        </div>
+        <div className="procedure-wrapperr">
+          <h2 className="special">GDSC CIT Kokrajhar</h2>
+          <div className="club-info">
+            <img src={ca2} alt="" className="logo.img" />
+            <p style={{ fontSize: "18px" }}>
+              The Google Developer Student Clubs (GDSC) at CIT Kokrajhar is an
+              inspiring community of tech enthusiasts and learners who come
+              together to foster innovation, collaboration, and skill
+              development. With a strong foundation of students passionate about
+              technology, GDSC CIT Kokrajhar serves as a hub for knowledge
+              sharing, hands-on workshops, and engaging events.In essence, GDSC
+              CIT Kokrajhar is a vibrant platform that nurtures the talents of
+              students, fosters a culture of continuous learning, and
+              contributes to the growth of both individuals and the tech
+              community as a whole.
+              <ul className="custom-list">
+                <li>
+                  <strong>Email Id: </strong>
+                  <a href="mailto:gdsccitk@cit.ac.in"> gdsccitk@cit.ac.in</a>
+                </li>
+                <li>
+                  <strong>Website:</strong>
+                  <a
+                    href="https://gdsc.community.dev/central-institute-of-technology/"
+                    target="none"
+                  >
+                    {" "}
+                    gdsc.cit.ac.in
+                  </a>
+                </li>
+              </ul>
+            </p>
+          </div>
         </div>
         <div className="procedure-wrapperr">
           <h2 className="special">Coding Club CITK</h2>
@@ -260,13 +298,11 @@ const TechClubs = () => {
               collaborate, and expand their knowledge of the subject outside of
               the classroom. Throughout the academic year, the club organizes a
               variety of activities and events, including workshops, seminars,
-              guest lectures, and hands-on practical sessions. These events are
-              intended to supplement the regular curriculum by providing members
-              with valuable insights into real-world applications and industry
-              practices. KONSTRUCT goes beyond the classroom, building bridges
-              to the community with impactful projects that uplift locals and
-              showcase civil engineering's power, we craft a future of social
-              responsibility. Join us to turn knowledge into action!
+              guest lectures, and hands-on practical sessions. The Club goes
+              beyond the classroom, building bridges to the community with
+              impactful projects that uplift locals and showcase civil
+              engineering's power, and craft the future of social
+              responsibility.
               <ul className="custom-list">
                 <li>
                   <strong>Email Id: </strong>
@@ -284,19 +320,16 @@ const TechClubs = () => {
           <div className="club-info">
             <img src={astrophysics} alt="" className="design" />
             <p style={{ fontSize: "18px" }}>
-              The Astrophysics Club of our college is a vibrant and enthusiastic
-              community that brings together students with a shared passion for
-              the mysteries of the cosmos. Comprised of astronomy enthusiasts,
-              physics majors, and curious minds alike, the club serves as a
-              platform for exploring the wonders of the universe. Regular
-              meetings involve engaging discussions, guest lectures from
-              esteemed professors and researchers, and exciting stargazing
-              sessions using the college's telescope. The club also organizes
-              field trips to observatories and space-related events, fostering a
-              deeper understanding of astrophysical phenomena and the latest
-              developments in the field. With a commitment to expanding
-              knowledge and inspiring awe, the Astrophysics Club empowers its
-              members to dream big and reach for the stars.
+              The Astrophysics Club is a vibrant and enthusiastic community that
+              brings together students with a shared passion for the mysteries
+              of the cosmos. Comprised of astronomy enthusiasts, physics majors,
+              and curious minds alike, the club serves as a platform for
+              exploring the wonders of the universe. Regular meetings involve
+              engaging discussions, guest lectures from esteemed professors and
+              researchers, and exciting stargazing sessions using the college's
+              telescope. The club also organizes field trips to observatories
+              and space-related events, fostering a deeper understanding of
+              astrophysical phenomena and the latest developments in the field.
               <ul className="custom-list">
                 <li>
                   <strong>Email Id: </strong>

@@ -75,9 +75,8 @@ const Procedure = (props) => {
             </p>
             <p>
               B. Tech. 4th year students are eligible for{" "}
-              <strong>6 months</strong> internship. The student will join the
-              company in January 2024 as an intern for a period of 6 months and
-              complete their 8th semester project in the company.
+              <strong>2 months</strong> internship. The student will join the
+              company as an intern for a period of 2 months.
             </p>
           </div>
         </div>
