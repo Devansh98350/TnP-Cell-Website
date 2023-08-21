@@ -157,6 +157,14 @@ class SideDrawer extends React.Component {
                   How to Reach Us
                 </NavLink>
               </li>
+              <li
+                onClick={() => this.props.click(this.handleDropDownContactUs)}
+                className="activeclass"
+              >
+                <NavLink to="/Facilities" exact className="activeclass">
+                  Facilities
+                </NavLink>
+              </li>
             </ul>
           ) : null}
         </ul>

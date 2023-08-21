@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import ToggleButton from "./ToggleButton";
 import brochurePdf from "../assets/Brochure Coming Soon.pdf";
+import cit from "../assets/images/cit.png";
 
 const Toolbar = (props) => (
   <header className="toolbar">
@@ -10,7 +11,10 @@ const Toolbar = (props) => (
         <ToggleButton click={props.sideDrawerToggler} />
       </div>
       <Link to="/home" style={{ textDecoration: "none", color: "white" }}>
-        <div className="logo">Placement Cell CITK</div>
+        <div className="logo">
+          <img src={cit} alt=" " className="logo-image" />
+          Placement Cell CITK
+        </div>
       </Link>
       <div className="spacer" />
       <div className="nav-elements">
@@ -85,6 +89,9 @@ const Toolbar = (props) => (
               </NavLink>
               <NavLink to="/howToReach" exact className="activeclass">
                 How to Reach us
+              </NavLink>
+              <NavLink to="/Facilities" exact className="activeclass">
+                Facilities
               </NavLink>
             </div>
           </li>

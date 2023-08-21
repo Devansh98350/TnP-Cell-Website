@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import Layout from "./Layout";
 
 const About = (props) => {
@@ -35,15 +36,14 @@ const About = (props) => {
             >
               Internship Drive Form
             </a>
-            <a
-              class="smoothscroll button stroke second"
-              href="/"
-              target="_blank"
+            <Link
+              className="smoothscroll button stroke second"
+              to="/"
               title="View Our Brochure"
               rel="noreferrer"
             >
               Diploma Placement Drive Form
-            </a>
+            </Link>
           </div>
         </div>
         <div className="about-text-wrapper">
