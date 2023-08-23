@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
 import Layout from "./Layout";
 
 const About = (props) => {
@@ -36,14 +35,14 @@ const About = (props) => {
             >
               Internship Drive Form
             </a>
-            <Link
-              className="smoothscroll button stroke second"
+            {/* <Link
+              className="smoothscroll button1 stroke second"
               to="/"
               title="View Our Brochure"
               rel="noreferrer"
             >
               Diploma Placement Drive Form
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className="about-text-wrapper">
@@ -61,7 +60,7 @@ const About = (props) => {
               Once you register our team will contact you soon. For any further
               information or clarification, please feel free to reach out to our
               Placement Cell at tnpcell@cit.ac.in or Contact our TPC at
-              +91-9065389731(Amarjeet Singh) Thank you for considering Central
+              +91-9065389731(Amarjeet Singh). Thank you for considering Central
               Institute of Technology Kokrajhar as your preferred destination
               for recruitment and internships.
             </p>

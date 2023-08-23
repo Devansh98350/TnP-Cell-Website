@@ -271,7 +271,7 @@ footer {
   padding: 10px;
   background-color: black;
   color: white;
-  font-size: 14px;
+  font-size: 15px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -296,6 +296,7 @@ footer {
   width: 100%;
   flex-flow: row wrap;
   height: 20%;
+  gap: 0;
 }
 
 .footer-col-parent {
@@ -310,9 +311,14 @@ footer {
 
 .footer-col {
   margin-top: 20px;
+  margin-left: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-basis: 0;
+  flex-grow: 1;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .footer-col a {
@@ -327,6 +333,65 @@ footer {
 }
 
 .footer-col p {
+  margin: 5px 0;
+  font-size: 20px;
+}
+
+/*1st*/
+
+.footer-col1-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-col1-parent img {
+  margin: 0px 10px;
+}
+
+.footer-col1 {
+  margin-top: 20px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 0;
+  flex-grow: 1;
+  padding: 10px;
+  box-sizing: border-box;
+}
+/*2nd*/
+
+.footer-col2-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-col2 {
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-basis: 0;
+  flex-grow: 1;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.footer-col2 a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-col2 a:hover {
+  cursor: pointer;
+  color: #65c2ed;
+  transition: all 0.2s ease;
+}
+
+.footer-col2 p {
   margin: 5px 0;
   font-size: 20px;
 }
@@ -383,7 +448,7 @@ body {
   width: 600px;
   margin-left: -50 px;
   max-width: 600px;
-  height: 200px;
+  height: 250px;
   border: 0;
 }
 
@@ -398,6 +463,12 @@ body {
   iframe {
     height: 250px;
     width: auto;
+  }
+  .footer-col1 {
+    margin-left: 0px;
+  }
+  .footer-col {
+    margin-left: 100px;
   }
 
   p,
@@ -833,7 +904,7 @@ body {
 
 .homepic {
   margin: 0 auto;
-  margin-top: 75px;
+  margin-top: 40px;
   position: relative;
   width: 98%;
   height: 400px;
@@ -2427,7 +2498,6 @@ Card Component */
 @media (max-width: 545px) {
   .procedure-wrapperr {
     width: 100%;
-    margin-left: 0px;
   }
   .procedure-wrapperrr {
     width: 100%;
@@ -2533,7 +2603,8 @@ Card Component */
 
   .club-info p {
     width: 100%;
-    margin: 10px;
+    margin-top: 10 px;
+    margin: 0px;
     font-size: 16px;
     text-align: center;
     text-align: justify;
@@ -2542,7 +2613,6 @@ Card Component */
   .club-info img {
     width: 100%;
     align-self: center;
-    margin-top: 10px;
   }
 
   .club-info .image-container {
@@ -2719,6 +2789,7 @@ a {
 .box-content {
   flex: 2;
   padding: 20px;
+  text-align: justify;
 }
 
 h2 {
@@ -2732,9 +2803,16 @@ h2 {
     align-items: stretch;
   }
 
-  .box-image,
-  .box-content {
+  .box-image {
     flex: 1;
+  }
+
+  .box-content h1 {
+    font-size: 40px;
+  }
+
+  .box-content p {
+    font-size: 16px;
   }
 
   .box-image img {

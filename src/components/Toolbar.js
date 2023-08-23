@@ -88,7 +88,7 @@ const Toolbar = (props) => (
                 Our Team
               </NavLink>
               <NavLink to="/howToReach" exact className="activeclass">
-                How to Reach us
+                How to Reach
               </NavLink>
               <NavLink to="/Facilities" exact className="activeclass">
                 Facilities
