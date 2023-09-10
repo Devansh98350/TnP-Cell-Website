@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import ToggleButton from "./ToggleButton";
-import brochurePdf from "../assets/Brochure Coming Soon.pdf";
+import brochurePdf from "../assets/CITK Placement Brochure 2023-24.pdf";
 import cit from "../assets/images/cit.png";
 
 const Toolbar = (props) => (

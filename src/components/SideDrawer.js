@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
-import brochurePdf from "../assets/Brochure Coming Soon.pdf";
+import brochurePdf from "../assets/CITK Placement Brochure 2023-24.pdf";
 
 class SideDrawer extends React.Component {
   state = {

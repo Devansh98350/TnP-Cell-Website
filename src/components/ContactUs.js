@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import Card from "./Card";
 import agm from "../assets/images/tpo.jpg";
-import pkn from "../assets/images/pkn.jpg";
 import ifti from "../assets/team23/ifti.jpeg";
 import amarjeet from "../assets/team23/amarjeet.png";
 import devanshu from "../assets/team23/devanshu.png";
@@ -9,7 +8,6 @@ import ashutosh from "../assets/team23/ashutosh.jpg";
 import chand from "../assets/team23/chand.jpg";
 import pras from "../assets/team23/pras.png";
 import rahan from "../assets/team23/rahan.jpg";
-import subh from "../assets/team23/sjr.jpg";
 import bhaskar from "../assets/team23/Bhaskar.jpeg";
 import Niloptal from "../assets/team23/Nilotpal.jpg";
 import tina from "../assets/team23/Tina.jpeg";
@@ -28,40 +26,15 @@ const ContactUs = (props) => {
           <div className="placement-coordinators">
             <div className="placement-coordinators-wrapper">
               <Card
-                src={subh}
-                alt="Dr. Subhajit Ray"
-                name="Dr. Subhajit Ray"
-                isTeacher={false}
-                position="Faculty-in-Charge"
-                email="tnp@cit.ac.in"
-                linkedin="https://www.linkedin.com/in/dr-subhojit-ray-06270642/"
-                islinkedin={true}
-                isPhone={false}
-                isEmail={true}
-              />
-              <Card
                 src={agm}
                 alt="Dr. Agile Mathew"
                 name="Dr. Agile Mathew"
                 isTeacher={false}
-                position="Training and Placement Officer"
+                position="Faculty-in-Charge"
                 email="tnp@cit.ac.in"
                 linkedin="https://www.linkedin.com/in/agile-mathew-7365a6181/"
                 islinkedin={true}
                 phone="+91-9957817471"
-                isPhone={true}
-                isEmail={true}
-              />
-              <Card
-                src={pkn}
-                alt="Dr. Prakash Kumar Nayak"
-                name="Dr. Prakash Kumar Nayak"
-                isTeacher={false}
-                position="Training and Placement Officer"
-                email="tnp@cit.ac.in"
-                linkedin="https://www.linkedin.com/in/prakash-kumar-nayak-phd-75a3b18/"
-                islinkedin={true}
-                phone="+91-94353-05453"
                 isPhone={true}
                 isEmail={true}
               />

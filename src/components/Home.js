@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
-import brochurePdf from "../assets/Brochure Coming Soon.pdf";
+import brochurePdf from "../assets/CITK Placement Brochure 2023-24.pdf";
 import { NavLink } from "react-router-dom";
 import buildingsImage from "../assets/images/buildings.jpg";
 import convoImage from "../assets/images/convo.jpeg";
